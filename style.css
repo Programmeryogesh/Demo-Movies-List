@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+   /* background: url(image/stalingrad-movie-digital.jpg); */
+   background-color: #011338;
+   /* background-size: cover; */
+   /* background-position: center; */
+   /* background-blend-mode: overlay; */
+   overflow: auto;
+
+}
+header{
+display: flex;
+align-items: center;
+background-color: rgb(3, 3, 32);
+color: white;
+position: sticky;
+top: 0;
+z-index: 999;
+}
+.name {
+    text-align: center;
+    width: 100%;
+}
+.menu-toggle {
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu {
+   position: absolute;
+   left: 0;
+    width: 0px;
+    background-color:rgb(3, 3, 32) ;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+footer{
+    background-color:rgb(3, 3, 32);
+    color: white;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    
+}
+footer ul li{
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+section{
+    padding: 20px;
+   
+}
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+section ul li{
+    list-style: none;
+}
+.movie_card{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #282c34;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    line-height: 2px;
+    cursor: pointer;
+    transition: 0.9s;
+    margin: 10px;
+}
+.movie_card:hover{
+    background-color: #fff;
+    color: black;
+    scale: 1.09;
+}
+.movie_card img{
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.movie_card img:hover{
+   
+}
+.title{
+    text-align: center;
+    font-size: 18px;
+}
+.type{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
