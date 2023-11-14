@@ -8,6 +8,7 @@ body{
    overflow: auto;
 
 }
+
 header{
 display: flex;
 align-items: center;
@@ -16,10 +17,15 @@ color: white;
 position: sticky;
 top: 0;
 z-index: 999;
+height: 45px;
 }
 .name {
     text-align: center;
     width: 100%;
+    
+}
+.name p{
+    font-size: 20px;
 }
 .menu-toggle {
     padding: 0 20px;
@@ -79,7 +85,7 @@ footer ul li{
     cursor: pointer;
 }
 section{
-    padding: 20px;
+    padding: 10px;
    
 }
 section ul {
@@ -94,9 +100,9 @@ section ul li{
     border-radius: 10px;
     background-color: #282c34;
     color: #fff;
-    width: 200px;
+    width: 220px;
     text-align: center;
-    line-height: 2px;
+    line-height: 20px;
     cursor: pointer;
     transition: 0.9s;
     margin: 10px;
@@ -109,17 +115,18 @@ section ul li{
 .movie_card img{
     border-radius: 10px;
     margin-bottom: 15px;
-}
-.movie_card img:hover{
+    width: 220px;
+
    
 }
+
 .title{
-    text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .type{
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 15px;
 }

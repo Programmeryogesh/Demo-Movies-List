@@ -9,24 +9,21 @@
 </head>
 <body>
     <header>
+        <div class="home-page" id="return-home"><i class="fa-solid fa-arrow-left"></i></div>
         <div class="name">
-            <h1>Yogi_Movie.Vercel.web</h1>
+            <p>Yogi_Movie.Vercel.web</p>
         </div>
     </header>
     <section style="height: 70vh;">
         <div class="search-bar">
-            <input type="search" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Movies" id="searchInput"><i class="fa-solid fa-magnifying-glass"   onclick="searchMovies()" ></i>
         </div>
+       <ul id="MovieList">
 
+       </ul>
     </section>
-    <footer>
-        <ul>
-            <li> <i class="fa-solid fa-fire"></i><br>Trending </li>
-            <li> <i class="fa-solid fa-clapperboard"></i><br>Movies</li>
-            <li><i class="fa-solid fa-tv"></i><br>TV series </li>
-            <li><i class="fa-solid fa-magnifying-glass"></i><br>Search </li>
-        </ul>
-    </footer>
+  
     <script src="https://kit.fontawesome.com/e117648c32.js" crossorigin="anonymous"></script>
+    <script src="search.js"></script>
 </body>
 </html>
