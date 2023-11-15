@@ -84,15 +84,16 @@ footer ul li{
     font-weight: 600;
     cursor: pointer;
 }
-section{
-    padding: 10px;
+.section{
+    padding: 10px 0;
    
 }
-section ul {
+.section ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-section ul li{
+.section ul li{
     list-style: none;
 }
 .movie_card{
@@ -110,7 +111,7 @@ section ul li{
 .movie_card:hover{
     background-color: #fff;
     color: black;
-    scale: 1.09;
+    scale: 0.9;
 }
 .movie_card img{
     border-radius: 10px;
@@ -129,4 +130,46 @@ section ul li{
     display: flex;
     justify-content: space-between;
     font-size: 15px;
+}
+
+@media only screen and (max-width: 991px){
+    .movie_card{
+        width: 200px;
+    }
+    .movie_card img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .movie_card{
+        width: 140px;
+    }
+    .movie_card img{
+        width: 140px;
+    }
+    .type{
+       display: none;
+    }
+}
+@media only screen and (max-width: 720px){
+    .movie_card{
+        width: 120px;
+    }
+    .movie_card img{
+        width: 120px;
+    }
+}
+@media only screen and (max-width: 480px){
+    footer ul li{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .movie_card{
+        width: 100px;
+        margin: 2px;
+        justify-content: space-evenly;
+    }
+    .movie_card img{
+        width: 100px;
+    }
 }
