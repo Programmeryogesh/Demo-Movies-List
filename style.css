@@ -71,13 +71,11 @@ footer{
     text-align: center;
     position: sticky;
     bottom: 0;
-}
-footer ul{
     display: flex;
     justify-content: center;
     
 }
-footer ul li{
+footer li{
     list-style: none;
     padding: 20px;
     font-size: 20px;
@@ -86,27 +84,23 @@ footer ul li{
 }
 .section{
     padding: 10px 0;
-   
-}
-.section ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+   
 }
-.section ul li{
-    list-style: none;
-}
+
 .movie_card{
     padding: 5px;
     border-radius: 10px;
     background-color: #282c34;
     color: #fff;
-    width: 220px;
+    width: 204.5px;
     text-align: center;
     line-height: 20px;
     cursor: pointer;
     transition: 0.9s;
-    margin: 10px;
+    margin: 10px 5px;
 }
 .movie_card:hover{
     background-color: #fff;
@@ -116,7 +110,7 @@ footer ul li{
 .movie_card img{
     border-radius: 10px;
     margin-bottom: 15px;
-    width: 220px;
+    width: 204.5px;
 
    
 }
@@ -134,42 +128,76 @@ footer ul li{
 
 @media only screen and (max-width: 991px){
     .movie_card{
-        width: 200px;
+        width: 178px;
     }
     .movie_card img{
-        width: 200px;
+        width: 178px;
     }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     .movie_card{
-        width: 140px;
+        width: 172px;
     }
     .movie_card img{
-        width: 140px;
+        width: 172px;
     }
     .type{
        display: none;
     }
 }
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 425px){
     .movie_card{
-        width: 120px;
+        width: 121px;
     }
     .movie_card img{
-        width: 120px;
+        width: 121px;
     }
-}
-@media only screen and (max-width: 480px){
-    footer ul li{
-        padding: 10px;
+    footer  li{
+        padding: 12px;
         font-size: 16px;
     }
+}
+@media only screen and (max-width: 375px){
+    footer  li{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .section{
+        margin: 0;
+        padding: 0 ;
+    }
     .movie_card{
-        width: 100px;
+        width: 111px;
         margin: 2px;
-        justify-content: space-evenly;
     }
     .movie_card img{
-        width: 100px;
+        width: 111px;
+    }
+    .title{
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 320px){
+    footer  li{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .section{
+        margin: 0;
+        padding: 0 ;
+    }
+    .movie_card{
+        width: 145px;
+        margin: 2px;
+    }
+    .movie_card img{
+        width: 145px;
+    }
+    .title{
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
     }
 }

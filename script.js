@@ -24,16 +24,15 @@ async function fetchMovieData() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '8e2b36aaf6msh416e8100d6f8de2p17acddjsn0debffdef58d',
+      'X-RapidAPI-Key': '1eeda3d2f6msh4f9be83782ab915p17b8bejsnf18171165bbc',
       'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
     }
-  }
+  };
   
-
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    // console.log(result);
+    console.log(result);
     return result;
   } catch (error) {
     console.error(error);
@@ -45,10 +44,10 @@ fetchMovieData();
 async function uploadMovies() {
   let listMovie = await fetchMovieData();
 
-  let MoviesList = document.getElementById("Movies");
+  let MoviesList = document.getElementById("section");
 
   listMovie.forEach((element, index) => {
-    let listItem = document.createElement("li");
+    let listItem = document.createElement("div");
     listItem.classList.add("movie_card");
     MoviesList.appendChild(listItem);
 
@@ -86,13 +85,13 @@ uploadMovies();
 // <--------------All Movies Btn----------------->
 
 async function showAllMovies() {
-  const movieListContainer = document.getElementById("Movies");
+  const movieListContainer = document.getElementById("section");
   movieListContainer.innerHTML = "";
 
   try {
     const movieData = await fetchMovieData();
     movieData.forEach((movie) => {
-      let listItem = document.createElement("li");
+      let listItem = document.createElement("div");
       listItem.classList.add("movie_card");
       movieListContainer.appendChild(listItem);
 
@@ -130,7 +129,7 @@ async function showAllMovies() {
 
 // <----------------comedyMovie----------------->
 async function showComedyMovies() {
-  const movieListContainer = document.getElementById("Movies");
+  const movieListContainer = document.getElementById("section");
   movieListContainer.innerHTML = ""; 
 
   try {
@@ -141,7 +140,7 @@ async function showComedyMovies() {
     
     comedyMovies.forEach((comedyMovie) => {
     
-      let listItem = document.createElement("li");
+      let listItem = document.createElement("div");
       listItem.classList.add("movie_card");
       movieListContainer.appendChild(listItem);
 
@@ -181,7 +180,7 @@ async function showComedyMovies() {
 
 // <----------------DramaMovie----------------->
 async function showDramaMovies() {
-  const movieListContainer = document.getElementById("Movies");
+  const movieListContainer = document.getElementById("section");
   movieListContainer.innerHTML = ""; 
 
   try {
@@ -192,7 +191,7 @@ async function showDramaMovies() {
     
     comedyMovies.forEach((DramaMovie) => {
     
-      let listItem = document.createElement("li");
+      let listItem = document.createElement("div");
       listItem.classList.add("movie_card");
       movieListContainer.appendChild(listItem);
 
@@ -231,7 +230,7 @@ async function showDramaMovies() {
 
 // <----------------actionMovie----------------->
 async function showActionMovie() {
-  const movieListContainer = document.getElementById("Movies");
+  const movieListContainer = document.getElementById("section");
   movieListContainer.innerHTML = ""; 
 
   try {
@@ -242,7 +241,7 @@ async function showActionMovie() {
     
     comedyMovies.forEach((ActionMovie) => {
     
-      let listItem = document.createElement("li");
+      let listItem = document.createElement("div");
       listItem.classList.add("movie_card");
       movieListContainer.appendChild(listItem);
 
